@@ -1,37 +1,107 @@
-<!--hide-->
-# Algorithm optimization in Python - Step by step guide
-<!--endhide-->
+# Text Processing Optimization (Python)
 
-- Optimize Python code.
+## 📌 Project Overview
 
-## 🌱 How to start this project
+This project focuses on optimizing a text processing algorithm to improve performance and readability. The goal is to transform inefficient code into a more efficient and scalable solution while maintaining accurate results.
 
-Follow the instructions below:
+---
 
-1. Create a new repository by forking the [Git project](https://github.com/4GeeksAcademy/algorithm-optimization-project-machine-learning) or [by clicking here](https://github.com/4GeeksAcademy/algorithm-optimization-project-machine-learning/fork).
-2. Open the newly created repository in Codespace using the [Codespace button extension](https://docs.github.com/en/codespaces/developing-in-codespaces/creating-a-codespace-for-a-repository#creating-a-codespace-for-a-repository).
-3. Once the Codespace VSCode has finished opening, start your project by following the instructions below.
+## 🎯 Problem Context
 
-## 📝 Instructions
+Text processing is a common task in data analysis and machine learning workflows. Inefficient implementations can significantly impact performance when working with large datasets.
 
-1. Once you start working on the project, you will see a `./notebook/problems.ipynb` file containing a list of exercises. 
+This project addresses:
 
-2. Before starting, make sure to select the **appropriate Kernel**.
+* Converting text to lowercase
+* Removing punctuation
+* Counting word frequency
+* Identifying the most common words
 
-    - When you open the notebook, a message will appear at the top indicating **"Select Kernel"**.
-    - Click on **"Select Kernel"** (as shown in the image).
+The original implementation worked correctly but was not optimized for performance.
 
-![image-kernel](https://github.com/4GeeksAcademy/probability-exercises-project-in-python/blob/main/assets/image-kernel.png?raw=true)
+---
 
-3. A list with available options will be displayed. Select **"Python Environments"** and choose the Python version you want to use.
+## 🧠 Solution Approach
 
-    - Make sure to select the version specified in the `devcontainer.json` file, as this is the recommended one for the project.
+### Optimization Strategy:
 
-![image-devcontainer](https://github.com/4GeeksAcademy/probability-exercises-project-in-python/blob/main/assets/devcontainer-image.png?raw=true)
+* Reduce unnecessary loops
+* Minimize repeated string operations
+* Use efficient data structures (e.g., dictionaries, collections)
+* Improve code readability and maintainability
 
-> Note: We also incorporated a `./notebook/solutions.ipynb` file that we strongly suggest you only use if you are stuck for more than 30 min or if you have already finished and want to compare it with your approach.
+### Key Improvements:
 
-## 🚛 How to deliver this project
+* Replaced iterative character replacement with optimized methods
+* Reduced redundant computations
+* Streamlined word counting logic
 
-Once you have finished solving the exercises, be sure to commit your changes, `push` to your repository and go to 4Geeks.com to upload the repository link.
+---
 
+## ⚙️ Technologies Used
+
+* Python
+* Standard Library (string, collections)
+
+---
+
+## 📊 Example Workflow
+
+1. Input raw text
+2. Clean and normalize text
+3. Extract words
+4. Count frequency
+5. Return most common terms
+
+---
+
+## 📈 Key Insights
+
+* Algorithm efficiency matters even in simple tasks
+* Built-in Python tools can significantly improve performance
+* Cleaner code often leads to better scalability
+
+---
+
+## 💡 Business Relevance
+
+Optimized text processing is critical for:
+
+* Natural Language Processing (NLP)
+* Search engines and indexing
+* Log analysis and monitoring
+* Data preprocessing pipelines
+
+---
+
+## 🚀 How to Run
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run the notebook
+
+Open:
+
+```
+notebook/problems.ipynb
+```
+
+---
+
+## 🔮 Future Improvements
+
+* Benchmark performance before vs after optimization
+* Extend to large-scale text datasets
+* Integrate with NLP libraries (NLTK, spaCy)
+* Add parallel processing for large workloads
+
+---
+
+## 👤 Author
+
+Scott Whitfield
+Data Analyst | Machine Learning Enthusiast
